@@ -123,8 +123,8 @@ Keyboard.prototype.onKeyUp = function(evt){
   console.log('no')
 };
 Keyboard.prototype.isKeyDown = function(evt){
-  console.log('Maybe?')
   return this.keys[keyCode];
+  console.log('Maybe?')
 };
 
 

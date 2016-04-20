@@ -21,21 +21,22 @@ var Player = function()
 var player = new Player();
 var keyboard = new Keyboard();
 
-//looked at teacher doing it and removed code he didn't use
 Player.prototype.update = function(deltaTime)
 {
-if( typeof(this.rotation) == "undefined" )
-	console.log('IS THIS NOT WORKING TOO?')
-this.rotation = 0;
-if(keyboard.isKeyDown(keyboard.KEY_SPACE) == true)
-{
-	console.log('WHAT IS THIS?')
-this.rotation -= deltaTime;
-}
-else
-{
-this.rotation += deltaTime;
-}
+	if( typeof(this.rotation))
+	{
+		console.log('IS THIS NOT WORKING TOO?')
+		this.rotation = 0;
+	}
+	if(keyboard.isKeyDown(keyboard.KEY_SPACE) == true)
+	{
+		console.log('WHAT IS THIS?')
+		this.rotation -= deltaTime;
+	}
+	else
+	{
+		this.rotation += deltaTime;
+	}
 }
 
 
