@@ -38,8 +38,11 @@ function run()
 	context.fillRect(0, 0, canvas.width, canvas.height);
 	
 	var deltaTime = getDeltaTime();
+
+	player = new Player();
+	player.update()
+	player.draw()
 	
-	context.drawImage(chuckNorris, SCREEN_WIDTH/2 - chuckNorris.width/2, SCREEN_HEIGHT/2 - chuckNorris.height/2);
 	
 	// update the frame counter 
 	fpsTime += deltaTime;
